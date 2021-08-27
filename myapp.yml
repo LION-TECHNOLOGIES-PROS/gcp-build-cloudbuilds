@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: springbootdeployment
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: springboot
@@ -45,7 +45,7 @@ kind: ReplicationController
 metadata:
   name: mongo-controller
 spec:
-  replicas: 1
+  replicas: 10
   selector:
     app: mongo
   template:
